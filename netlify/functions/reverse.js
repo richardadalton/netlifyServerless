@@ -1,9 +1,9 @@
 exports.handler = async function(event, context) {
-    console.log({event}, {context})
+    const eventBody = JSON.parse(event.body)
     return {
         statusCode: 200,
         body: JSON.stringify({
-            message: "Reverse!"
+            message: eventBody.message
         })
     }
 }
