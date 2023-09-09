@@ -10,6 +10,8 @@
     <h1>Up and Running with Serverless Functions</h1>
     <button id="fetch-btn">Fetch</button>
     <button id="fetch-pokedex-btn">Fetch Pokedex</button>
+
+    <input id="post-reverse-input" type="text" />
     <button id="post-reverse-btn">Post Reverse</button>
     <p id="response-output">Response Placeholder</p>
 
@@ -35,7 +37,7 @@
           const response = await fetch('/.netlify/functions/reverse', {
             method: 'POST',
             body: JSON.stringify({
-              message: 'Reverse This'
+              message: document.getElementById('post-reverse-input').value
             })
           }).then(response => response.json())
           responseText.innerText = JSON.stringify(response)
