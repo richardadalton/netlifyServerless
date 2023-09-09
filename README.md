@@ -5,7 +5,9 @@ Create and Deploy some simple serverless functions.
 
 ## Functions
 hello-world:    Simple 'return a string' function.
+
 pokedex:        Hit an API and return the result.
+
 reverse:        Accept a message in the body of a POST, reverse it and return.
 
 ## Running Locally 
