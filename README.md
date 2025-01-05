@@ -11,6 +11,8 @@ pokedex:        Hit an API and return the result.
 reverse:        Accept a message in the body of a POST, reverse it and return.
 
 ## Running Locally 
+$ npm install
+
 $ netlify dev
 
 ## Deployment
